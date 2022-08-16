@@ -22,6 +22,7 @@ import {
 import { AiOutlineCopyright } from "react-icons/ai";
 import { ImMenu3 } from "react-icons/im";
 import Typical from "react-typical";
+import { send } from "emailjs-com";
 
 function Portfolio() {
   const [show, setShow] = useState("0");
@@ -29,9 +30,33 @@ function Portfolio() {
   const [IconChange, setIconChange] = useState(
     <ImMenu3 className="menu3Icon" />
   );
+
+  const [toSend, setToSend] = useState({
+    Name: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+  });
+
   useEffect(() => {
     Aos.init({ duration: "1700" });
   }, []);
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_jdwadne", "template_z1qe9bc", toSend, "Icc1R5WCbK1ATVer0")
+      .then((response) => {
+        console.log("SUCCESS", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
   const changeHeight = () => {
     if (show === "0") {
       setShow("1");
@@ -305,33 +330,53 @@ function Portfolio() {
           <h1 className="contact">Contact Me</h1>
         </div>
         <div data-aos="fade-up" className="contactFlex">
-          <div className="contactDiv1">
-            <input type="text" placeholder="Name" className="contactChild1" />
-          </div>
-          <div className="contactDiv2">
-            <input type="email" placeholder="Email" className="contactChild2" />
-          </div>
-          <div className="contactDiv3">
-            <input
-              type="text"
-              placeholder="Subject"
-              className="contactChild3"
-            />
-          </div>
-          <div className="contactDiv4">
-            <textarea
-              type="text"
-              placeholder="Message"
-              className="contactChild4"
-            />
-          </div>
-          <div className="contactDiv5">
-            <input
-              type="button"
-              value="Send to John"
-              className="contactChild5"
-            />
-          </div>
+          <form onSubmit={onSubmit}>
+            <div className="contactDiv1">
+              <input
+                type="text"
+                name="Name"
+                onChange={handleChange}
+                value={toSend.Name}
+                placeholder="Name"
+                className="contactChild1"
+              />
+            </div>
+            <div className="contactDiv2">
+              <input
+                type="email"
+                name="Email"
+                onChange={handleChange}
+                value={toSend.Email}
+                placeholder="Email"
+                className="contactChild2"
+              />
+            </div>
+            <div className="contactDiv3">
+              <input
+                type="text"
+                name="Subject"
+                onChange={handleChange}
+                value={toSend.Subject}
+                placeholder="Subject"
+                className="contactChild3"
+              />
+            </div>
+            <div className="contactDiv4">
+              <textarea
+                type="text"
+                name="Message"
+                onChange={handleChange}
+                value={toSend.Message}
+                placeholder="Message"
+                className="contactChild4"
+              />
+            </div>
+            <div className="contactDiv5">
+              <button type="submit" className="contactChild5">
+                Send to John
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <div className="navDown">
