@@ -668,6 +668,11 @@ a {
   color: white;
   font-size: 15px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.contactChild5:hover{
+  transition-duration: .5s;
+  background-color: rgb(83, 83, 219);
 }
 .navDown {
   margin-top: 8%;
