@@ -20,7 +20,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { ImBrightnessContrast, ImMenu3 } from "react-icons/im";
+import { ImMenu3 } from "react-icons/im";
 import Typical from "react-typical";
 
 function Portfolio() {
