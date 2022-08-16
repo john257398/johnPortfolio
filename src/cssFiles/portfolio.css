@@ -1,0 +1,1057 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.totalNav {
+  position: sticky;
+  top: 0;
+  padding-right: 4.5%;
+  padding-left: 7%;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+  height: 10vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 1px 1px 1px 1px rgba(56, 56, 230, 0.1),
+    1px 1px 1px 1px rgba(56, 56, 230, 0.1);
+}
+.nameDiv {
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: oblique;
+  color: rgb(56, 56, 230);
+  font-family: "Arvo";
+}
+.flexDiv {
+  font-family: "Arvo";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 17%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(44, 39, 39);
+}
+.flexChild1,
+.flexChild2,
+.flexChild3,
+.flexChild4,
+.flexChild5 {
+  cursor: pointer;
+}
+.flexChild1:hover {
+  color: rgb(56, 56, 230);
+  transition-duration: 0.1s;
+}
+.flexChild2:hover {
+  color: rgb(56, 56, 230);
+  transition-duration: 0.1s;
+}
+.flexChild3:hover {
+  color: rgb(56, 56, 230);
+  transition-duration: 0.1s;
+}
+.flexChild4:hover {
+  color: rgb(56, 56, 230);
+  transition-duration: 0.1s;
+}
+.flexChild5:hover {
+  color: rgb(56, 56, 230);
+  transition-duration: 0.1s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.bright {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.brightIcon {
+  font-size: 30px;
+  color: rgb(41, 41, 230);
+}
+.navParent {
+  display: none;
+}
+.menu3 {
+  display: none;
+}
+.greetingParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.greetDiv {
+  font-family: "Arvo";
+  color: rgb(44, 39, 39);
+  width: 45%;
+}
+.greet {
+  font-weight: 600;
+  font-style: oblique;
+  font-size: 19px;
+}
+.medDiv {
+  background-color: rgb(23, 23, 119);
+  height: 500px;
+  border-radius: 25px;
+  margin-top: 2.5%;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-shadow: 1px 1px 3px 3px rgba(56, 56, 230, 0.2),
+    1px 1px 3px 3px rgba(56, 56, 230, 0.2);
+}
+.medImageDiv {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.medImage {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+.johnImage {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  font-weight: 800;
+  width: fit-content;
+}
+.john {
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: serif;
+}
+.typicalText {
+  color: rgb(56, 56, 230);
+}
+.john2 {
+  margin-top: 10%;
+}
+.john3 {
+  margin-top: 6%;
+}
+.john4 {
+  margin-top: 6%;
+}
+.john2,
+.john3,
+.john4 {
+  font-size: 18px;
+}
+.whatsapp {
+  background-color: rgb(56, 56, 230);
+  width: 100%;
+  height: 6.5vh;
+  color: rgb(247, 241, 241);
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-style: oblique;
+  cursor: pointer;
+}
+.whatsappParent {
+  width: 45%;
+  margin-top: 8%;
+}
+.whatsapp:hover {
+  transition-duration: 0.2s;
+  background-color: orange;
+  color: black;
+}
+.iconAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 7%;
+}
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  font-size: 22px;
+  color: rgb(56, 56, 230);
+  cursor: pointer;
+}
+.icon1:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon2:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon3:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon4:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.aboutMe {
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+  margin-left: 7%;
+  margin-top: 7%;
+  font-size: 18px;
+  font-style: oblique;
+}
+.aboutBody {
+  font-family: "Arvo";
+  font-size: 18px;
+  color: rgb(44, 39, 39);
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 4%;
+}
+.resumeParent {
+  margin-top: 3%;
+  width: 25%;
+  margin-left: 7%;
+}
+.resume {
+  background-color: rgb(56, 56, 230);
+  border: none;
+  color: white;
+  height: 8vh;
+  width: 100%;
+  font-size: 16px;
+  font-style: oblique;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.resume:hover {
+  transition-duration: 0.2s;
+  background-color: orange;
+  color: black;
+}
+.projectParent {
+  width: fit-content;
+  margin-left: 7%;
+  margin-top: 7%;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+  font-size: 18px;
+  font-style: oblique;
+}
+.projectFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 7%;
+  margin-right: 7%;
+  overflow-x: hidden;
+}
+.firstProjectDiv {
+  width: 30.3%;
+  height: 70vh;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 1px 2px 2px rgba(56, 56, 230, 0.2),
+    2px 1px 2px 2px rgba(56, 56, 230, 0.2);
+}
+.firstProject {
+  width: 100%;
+  height: 20vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.firstProjectFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.firstProjectHead {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+}
+.firstProjectText {
+  font-family: "Arvo";
+  font-size: 15px;
+  color: rgb(44, 39, 39);
+  margin-top: 8%;
+}
+.view1 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 7vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  color: white;
+  background-color: rgb(56, 56, 230);
+  cursor: pointer;
+}
+.view1:hover {
+  transition-duration: 0.2s;
+  background-color: orange;
+  color: black;
+}
+.secondProjectDiv {
+  width: 30.3%;
+  height: 70vh;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 1px 2px 2px rgba(56, 56, 230, 0.2),
+    2px 1px 2px 2px rgba(56, 56, 230, 0.2);
+}
+.secondProject {
+  width: 100%;
+  height: 20vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.secondProjectFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+}
+.secondProjectHead {
+  width: fit-content;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+}
+.secondProjectText {
+  font-family: "Arvo";
+  font-size: 15px;
+  color: rgb(44, 39, 39);
+  margin-top: 17%;
+  margin-top: -0%;
+}
+.view2 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 7vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  color: white;
+  background-color: rgb(56, 56, 230);
+  cursor: pointer;
+}
+.view2:hover {
+  transition-duration: 0.2s;
+  background-color: orange;
+  color: black;
+}
+.thirdProjectDiv {
+  width: 30.3%;
+  height: 70vh;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 1px 2px 2px rgba(56, 56, 230, 0.2),
+    2px 1px 2px 2px rgba(56, 56, 230, 0.2);
+}
+.thirdProject {
+  width: 100%;
+  height: 20vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.thirdProjectFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+}
+.thirdProjectHead {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+}
+.thirdProjectText {
+  font-family: "Arvo";
+  font-size: 15px;
+  color: rgb(44, 39, 39);
+  margin-top: 8%;
+}
+.view3 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 7vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  color: white;
+  background-color: rgb(56, 56, 230);
+  cursor: pointer;
+}
+.view3:hover {
+  transition-duration: 0.2s;
+  background-color: orange;
+  color: black;
+}
+.skillParent {
+  width: fit-content;
+  margin-left: 7%;
+  margin-top: 7%;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+  font-size: 18px;
+  font-style: oblique;
+}
+.iconParent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 14.2rem;
+  width: fit-content;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+.htmlDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.cssDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.jsDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.reactDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.bootstrapDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.nodejsDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.mongodbDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.expressjsDiv {
+  box-shadow: 1px 3px 1px 1px rgba(56, 56, 230, 0.4),
+    1px 3px 1px 1px rgba(56, 56, 230, 0.4);
+  border: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  position: relative;
+}
+.htmlChild,
+.cssChild,
+.jsChild,
+.reactChild,
+.bootstrapChild,
+.nodejsChild,
+.mongodbChild,
+.expressjsChild {
+  position: absolute;
+  left: 60%;
+  color: rgb(56, 56, 230);
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.htmlDiv2,
+.cssDiv2,
+.jsDiv2,
+.reactDiv2,
+.bootstrapDiv2,
+.nodejsDiv2,
+.mongodbDiv2,
+.expressjsDiv2 {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 32.5px;
+}
+.html {
+  font-size: 45px;
+  color: rgb(241, 38, 38);
+  border-radius: 25px;
+}
+.css {
+  font-size: 45px;
+  color: rgb(56, 56, 255);
+}
+.js {
+  font-size: 45px;
+  color: rgb(231, 198, 12);
+}
+.react {
+  font-size: 45px;
+  color: aqua;
+}
+.bootstrap {
+  font-size: 45px;
+  color: rgb(86, 61, 124);
+}
+.nodejs {
+  font-size: 45px;
+  color: rgb(86, 61, 124);
+}
+.mongodb {
+  font-size: 45px;
+  color: rgb(86, 61, 124);
+}
+.expressjs {
+  font-size: 45px;
+  color: rgb(86, 61, 124);
+}
+.contactParent {
+  width: fit-content;
+  margin-left: 7%;
+  margin-top: 7%;
+  font-family: sans-serif;
+  color: rgb(44, 39, 39);
+  font-size: 18px;
+  font-style: oblique;
+}
+.contactFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid rgba(56, 56, 230, 0.568);
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 3%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contactDiv1,
+.contactDiv2,
+.contactDiv3,
+.contactDiv4 {
+  width: 80%;
+  margin-left: 10%;
+}
+.contactDiv2 {
+  margin-top: 4%;
+}
+.contactDiv3 {
+  margin-top: 4%;
+}
+.contactDiv4 {
+  margin-top: 4%;
+}
+.contactDiv5 {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+.contactChild1 {
+  width: 100%;
+  height: 7vh;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(56, 56, 230, 0.568);
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.contactChild2 {
+  width: 100%;
+  height: 7vh;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(56, 56, 230, 0.568);
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.contactChild3 {
+  width: 100%;
+  height: 8vh;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(56, 56, 230, 0.568);
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.contactChild4 {
+  width: 100%;
+  height: 12vh;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(56, 56, 230, 0.568);
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.contactChild5 {
+  width: 100%;
+  height: 8vh;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: rgb(56, 56, 230);
+  color: white;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.navDown {
+  margin-top: 8%;
+  width: 100%;
+  height: 11vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 4px 1px 4px 4px rgba(56, 56, 230, 0.2),
+    4px 1px 4px 4px rgba(56, 56, 230, 0.2);
+}
+.copyrightParent {
+  margin-left: 7%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.copyrightIcon {
+  font-size: 15px;
+  color: rgb(56, 56, 230);
+}
+.copyrightText {
+  font-family: "Arvo";
+  font-size: 20px;
+  color: rgb(56, 56, 230);
+}
+.iconFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: rgb(56, 56, 230);
+  width: 35%;
+  height: fit-content;
+  font-size: 22px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.copyrightParent2 {
+  margin-right: 5%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icon5,
+.icon6,
+.icon7,
+.icon8 {
+  cursor: pointer;
+}
+.icon5:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon6:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon7:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.icon8:hover {
+  transition-duration: 0.2s;
+  color: black;
+}
+.copyrightIcon2 {
+  font-size: 15px;
+  color: rgb(56, 56, 230);
+}
+.copyrightText2 {
+  font-family: "Arvo";
+  font-size: 20px;
+  color: rgb(56, 56, 230);
+}
+@media screen and (min-width: 270px) and (max-width: 600px) {
+  .totalNav {
+    height: 9vh;
+  }
+  .nameDiv {
+    font-size: 27px;
+  }
+  .flexDiv {
+    display: none;
+  }
+  .menu3 {
+    display: inline-block;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 6%;
+  }
+  .menu3Icon {
+    font-size: 25px;
+    color: rgb(58, 51, 51);
+  }
+  .navParent {
+    display: unset;
+    background: #00000050;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    transition-property: opacity;
+    transition-duration: 1s;
+  }
+  .navFlex {
+    position: absolute;
+    right: 0%;
+    list-style: none;
+    line-height: 280%;
+    width: 35%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  .navHome,
+  .navAbout,
+  .navProject,
+  .navSkill,
+  .navContact {
+    background-color: rgb(56, 56, 230);
+    color: white;
+    border-bottom: 1px solid rgb(39, 36, 36);
+    box-sizing: border-box;
+    padding-left: 5%;
+    margin-top: 5%;
+  }
+  .greetingParent {
+    flex-direction: column;
+  }
+  .greetDiv {
+    width: 100%;
+  }
+  .greet {
+    font-size: 18px;
+  }
+  .john {
+    font-size: 23px;
+  }
+  .john2,
+  .john3,
+  .john4 {
+    font-size: 15px;
+  }
+  .whatsappParent {
+    width: 43%;
+  }
+  .whatsapp {
+    height: 5.5vh;
+    font-size: 15px;
+  }
+  .iconAlign {
+    width: 45%;
+  }
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4 {
+    font-size: 18px;
+  }
+  .medDiv {
+    height: 410px;
+    margin-top: 8%;
+  }
+  .medImage {
+    width: 285px;
+    height: 310px;
+  }
+  .aboutMe {
+    font-size: 16px;
+    margin-top: 12%;
+  }
+  .aboutBody {
+    font-size: 15px;
+  }
+  .resumeParent {
+    width: 45%;
+  }
+  .resume {
+    height: 5.5vh;
+    font-size: 15px;
+  }
+  .projectParent {
+    font-size: 16px;
+    margin-top: 12%;
+  }
+  .projectFlex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .firstProjectDiv {
+    width: 86%;
+    margin-left: 7%;
+  }
+  .secondProjectDiv {
+    width: 86%;
+    margin-left: 7%;
+  }
+  .thirdProjectDiv {
+    width: 86%;
+    margin-left: 7%;
+  }
+  .skillParent {
+    font-size: 16px;
+    margin-top: 12%;
+  }
+  .iconParent {
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 3rem 5rem;
+    justify-content: center;
+  }
+  .htmlDiv,
+  .cssDiv,
+  .jsDiv,
+  .reactDiv,
+  .bootstrapDiv,
+  .nodejsDiv,
+  .mongodbDiv,
+  .expressjsDiv {
+    height: 90px;
+    width: 90px;
+  }
+  .contactParent {
+    font-size: 16px;
+    margin-top: 12%;
+  }
+  .contactFlex {
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contactDiv1,
+  .contactDiv2,
+  .contactDiv3,
+  .contactDiv4 {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .contactChild1 {
+    height: 6vh;
+  }
+  .contactChild2 {
+    height: 6vh;
+  }
+  .contactChild3 {
+    height: 7vh;
+  }
+  .contactChild4 {
+    height: 11vh;
+  }
+  .contactChild5 {
+    height: 6vh;
+  }
+  .copyrightText {
+    font-size: 15px;
+  }
+  .copyrightIcon {
+    font-size: 13px;
+  }
+  .iconFlex {
+    font-size: 17px;
+    width: 30%;
+  }
+  .copyrightText2 {
+    font-size: 15px;
+  }
+  .copyrightIcon2 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-height: 800px) and (max-height: 1000px) {
+  .firstProjectDiv,
+  .secondProjectDiv,
+  .thirdProjectDiv {
+    height: 60vh;
+  }
+  .firstProjectText {
+    margin-top: 13%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) and (min-height: 1001px) and (max-height: 1400px) {
+  .greetingParent {
+    flex-direction: column;
+  }
+  .greetDiv {
+    width: 100%;
+  }
+  .whatsappParent {
+    width: 38%;
+  }
+  .whatsapp {
+    height: 5.3vh;
+    font-size: 15px;
+  }
+  .resumeParent {
+    width: 38%;
+  }
+  .resume {
+    height: 5.3vh;
+    font-size: 15px;
+  }
+  .projectFlex {
+    flex-wrap: wrap;
+  }
+  .firstProjectDiv,
+  .secondProjectDiv,
+  .thirdProjectDiv {
+    width: 47%;
+    height: 50vh;
+  }
+  .thirdProjectDiv {
+    margin-top: 6%;
+  }
+  .firstProject,
+  .secondProject,
+  .thirdProject {
+    height: 15vh;
+  }
+  .firstProjectHead,
+  .secondProjectHead,
+  .thirdProjectHead {
+    margin-top: 12%;
+  }
+  .contactFlex {
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (width: 280px) {
+  .john {
+    font-size: 20px;
+  }
+  .whatsappParent {
+    width: 45%;
+  }
+  .medImage {
+    width: 190px;
+    height: 220px;
+  }
+  .whatsapp {
+    height: 5.5vh;
+    font-size: 13px;
+  }
+  .resumeParent {
+    width: 47%;
+  }
+  .resume {
+    height: 5.5vh;
+    font-size: 13px;
+  }
+  .firstProjectHead,
+  .secondProjectHead,
+  .thirdProjectHead {
+    font-size: 15px;
+  }
+  .firstProjectText,
+  .secondProjectText,
+  .thirdProjectText {
+    font-size: 13px;
+  }
+  .copyrightText {
+    font-size: 13px;
+  }
+  .copyrightIcon {
+    font-size: 11px;
+  }
+  .iconFlex {
+    font-size: 15px;
+    width: 30%;
+    margin-right: 10%;
+  }
+  .copyrightParent2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1002px) and (max-width: 1300px) {
+  .iconParent {
+    gap: 3rem 6rem;
+    justify-content: center;
+  }
+}
