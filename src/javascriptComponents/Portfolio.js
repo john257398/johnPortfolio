@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
+import johnResume from '../myImages/johnresume.pdf'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../cssFiles/portfolio.css";
-import med1 from "../myImages/john.jpg";
+import portImage from "../myImages/portfolioImage.png";
 import firstProject from "../myImages/first project.PNG";
 import secondProject from "../myImages/second project.PNG";
-import thirdProject from "../myImages/third project.PNG";
+import thirdProject from "../myImages/Capture10.PNG";
 import {
   FaTimes,
   FaTwitter,
-  FaLinkedinIn,
   FaFacebook,
   FaGithub,
   FaHtml5,
@@ -18,11 +18,13 @@ import {
   FaReact,
   FaBootstrap,
   FaNodeJs,
+  FaEtsy
 } from "react-icons/fa";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { ImMenu3 } from "react-icons/im";
 import Typical from "react-typical";
 import { send } from "emailjs-com";
+import {DiMongodb} from 'react-icons/di'
 
 function Portfolio() {
   const [show, setShow] = useState("0");
@@ -151,7 +153,10 @@ function Portfolio() {
               data-aos-duration="1000"
               className="whatsappParent"
             >
-              <button className="whatsapp">Whatsapp Me</button>
+              <button className="whatsapp">
+                <a href="https://wa.me/08075721644">
+                Whatsapp Me
+                </a></button>
             </div>
             <div
               data-aos="fade-left"
@@ -160,29 +165,24 @@ function Portfolio() {
             >
               <div>
                 {" "}
-                <FaLinkedinIn className="icon1" />
-              </div>
-              <div>
-                {" "}
+                <a href="https://twitter.com/JohnSol08427580">
                 <FaTwitter className="icon2" />
+                </a>
               </div>
               <div>
                 {" "}
+                <a href="https://github.com/john257398">
                 <FaGithub className="icon3" />
+                </a>
               </div>
               <div>
+                <a href='https://www.facebook.com/john.solomonwise'>
                 <FaFacebook className="icon4" />
+                </a>
               </div>
             </div>
           </div>
-          <div className="medDiv">
-            <div className="medImageDiv">
-              <img alt="" src={med1} className="medImage" />
-            </div>
-            <div className="johnImage">
-              <p>John Solomon(Code_Doc)</p>
-            </div>
-          </div>
+              <img src={portImage} alt='' className="portImage" />
         </div>
       </section>
       <section id="navigateAbout" className="aboutDiv">
@@ -194,19 +194,25 @@ function Portfolio() {
           <p className="aboutBody2">
             I am a Software Developer with over one and the half years of
             experience.Though i have a basic knowledge of Nodejs,Express.js and
-            Mongodb,i have only created two crash course projects(task manager
-            and Article manager),they are not in my portfolio though.I hail from
-            Nigeria, West Africa. I am a guy completely driven by passion,
-            especially in the IT industry, and this passion has pushed me to
-            learn to code. Coding is an addiction for me and I am not curing
-            myself of it anytime soon. It is always a thing of joy for me to use
-            my skills to solve the problems of others, as well as mine. Other
-            hobbies of mine include playing games, hanging out, listening to
-            music,reading etc.
+            Mongodb,i have only created two crash course projects with them(task
+            manager and Article manager),they are not in my portfolio though.I
+            hail from Nigeria, West Africa. I am a guy completely driven by
+            passion, especially in the IT industry, and this passion has pushed
+            me to learn to code. Coding is an addiction for me and I am not
+            curing myself of it anytime soon. It is always a thing of joy for me
+            to use my skills to solve the problems of others, as well as mine.
+            Other hobbies of mine include playing games, hanging out, listening
+            to music,reading etc.
           </p>
         </div>
         <div data-aos="fade-up" className="resumeParent">
-          <button className="resume">Download My Resume</button>
+          <button className="resume">
+            <a 
+            href={johnResume}
+            download
+            >
+            Download My Resume
+            </a></button>
         </div>
       </section>
       <section id="navigateProjects">
@@ -228,7 +234,9 @@ function Portfolio() {
                 </p>
               </div>
             </div>
-            <button className="view1">View</button>
+            <a href="https://quiz-app6.herokuapp.com">
+              <button className="view1">View</button>
+            </a>
           </div>
           <div data-aos="fade-in" className="secondProjectDiv">
             <img className="secondProject" src={secondProject} alt="" />
@@ -240,12 +248,15 @@ function Portfolio() {
                 <p>
                   I built this Front-end website with React.js framework.It is
                   more like the prototype of an E-commerce Website because i did
-                  not implement backend,but the Ui is very okay.It is very
-                  mobile-responsive and overall smooth user experience.
+                  not implement backend,but the Ui is very okay.Apart from the
+                  homepage,it has other pages.It is very mobile-responsive and
+                  overall smooth user experience.
                 </p>
               </div>
             </div>
+            <a href="https://farm-coat.herokuapp.com">
             <button className="view2">View</button>
+            </a>
           </div>
           <div data-aos="fade-left" className="thirdProjectDiv">
             <img className="thirdProject" src={thirdProject} alt="" />
@@ -263,7 +274,9 @@ function Portfolio() {
                 </p>
               </div>
             </div>
+            <a href="https://todoapp56.herokuapp.com">
             <button className="view3">View</button>
+            </a>
           </div>
         </div>
       </section>
@@ -314,13 +327,13 @@ function Portfolio() {
           <div className="mongodbDiv">
             <div className="mongodbChild">Mongodb</div>
             <div className="mongodbDiv2">
-              <FaNodeJs className="mongodb" />
+              <DiMongodb className="mongodb" />
             </div>
           </div>
           <div className="expressjsDiv">
             <div className="expressjsChild">Express.js</div>
             <div className="expressjsDiv2">
-              <FaNodeJs className="expressjs" />
+              <FaEtsy className="expressjs" />
             </div>
           </div>
         </div>
@@ -389,18 +402,20 @@ function Portfolio() {
         <div className="iconFlex">
           <div>
             {" "}
-            <FaLinkedinIn className="icon5" />
-          </div>
-          <div>
-            {" "}
+            <a href="https://twitter.com/JohnSol08427580">
             <FaTwitter className="icon6" />
+            </a>
           </div>
           <div>
             {" "}
+            <a href="https://github.com/john257398">
             <FaGithub className="icon7" />
+            </a>
           </div>
           <div>
+          <a href='https://www.facebook.com/john.solomonwise'>
             <FaFacebook className="icon8" />
+            </a>
           </div>
         </div>
         <div className="copyrightParent2">

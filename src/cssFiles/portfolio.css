@@ -112,35 +112,10 @@ a {
   font-style: oblique;
   font-size: 19px;
 }
-.medDiv {
-  background-color: rgb(23, 23, 119);
-  height: 500px;
-  border-radius: 25px;
-  margin-top: 2.5%;
-  padding-left: 18px;
-  padding-right: 18px;
-  box-shadow: 1px 1px 3px 3px rgba(56, 56, 230, 0.2),
-    1px 1px 3px 3px rgba(56, 56, 230, 0.2);
-}
-.medImageDiv {
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-.medImage {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  margin-top: 18px;
-}
-.johnImage {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  margin: auto;
-  font-weight: 800;
-  width: fit-content;
+.portImage{
+ width: 45%;
+ height: 82vh;
+ margin-top: 3%;
 }
 .john {
   margin-top: 5%;
@@ -191,7 +166,7 @@ a {
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  width: 50%;
+  width: 35%;
   margin-top: 7%;
 }
 .icon1,
@@ -567,7 +542,7 @@ a {
 }
 .nodejs {
   font-size: 45px;
-  color: rgb(86, 61, 124);
+  color: green;
 }
 .mongodb {
   font-size: 45px;
@@ -575,7 +550,7 @@ a {
 }
 .expressjs {
   font-size: 45px;
-  color: rgb(86, 61, 124);
+  color: rgb(44, 37, 37);
 }
 .contactParent {
   width: fit-content;
@@ -707,7 +682,7 @@ a {
   justify-content: space-between;
   flex-direction: row;
   color: rgb(56, 56, 230);
-  width: 35%;
+  width: 20%;
   height: fit-content;
   font-size: 22px;
   margin-top: auto;
@@ -827,7 +802,7 @@ a {
     font-size: 15px;
   }
   .iconAlign {
-    width: 45%;
+    width: 30%;
   }
   .icon1,
   .icon2,
@@ -835,13 +810,9 @@ a {
   .icon4 {
     font-size: 18px;
   }
-  .medDiv {
-    height: 410px;
-    margin-top: 8%;
-  }
-  .medImage {
-    width: 285px;
-    height: 310px;
+  .portImage{
+    width: 100%;
+    height: 65vh;
   }
   .aboutMe {
     font-size: 16px;
@@ -938,7 +909,7 @@ a {
   }
   .iconFlex {
     font-size: 17px;
-    width: 30%;
+    width: 15%;
   }
   .copyrightText2 {
     font-size: 15px;
@@ -963,6 +934,9 @@ a {
   }
   .greetDiv {
     width: 100%;
+  }
+  .portImage{
+    display: none;
   }
   .whatsappParent {
     width: 38%;
@@ -1047,7 +1021,7 @@ a {
   }
   .iconFlex {
     font-size: 15px;
-    width: 30%;
+    width: 15%;
     margin-right: 10%;
   }
   .copyrightParent2 {
