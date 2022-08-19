@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import johnResume from '../myImages/johnresume.pdf'
+import johnResume from "../myImages/johnresume.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../cssFiles/portfolio.css";
@@ -18,13 +18,13 @@ import {
   FaReact,
   FaBootstrap,
   FaNodeJs,
-  FaEtsy
+  FaEtsy,
 } from "react-icons/fa";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { ImMenu3 } from "react-icons/im";
 import Typical from "react-typical";
 import { send } from "emailjs-com";
-import {DiMongodb} from 'react-icons/di'
+import { DiMongodb } from "react-icons/di";
 
 function Portfolio() {
   const [show, setShow] = useState("0");
@@ -154,9 +154,8 @@ function Portfolio() {
               className="whatsappParent"
             >
               <button className="whatsapp">
-                <a href="https://wa.me/08075721644">
-                Whatsapp Me
-                </a></button>
+                <a href="https://wa.me/08075721644">Whatsapp Me</a>
+              </button>
             </div>
             <div
               data-aos="fade-left"
@@ -166,23 +165,23 @@ function Portfolio() {
               <div>
                 {" "}
                 <a href="https://twitter.com/JohnSol08427580">
-                <FaTwitter className="icon2" />
+                  <FaTwitter className="icon2" />
                 </a>
               </div>
               <div>
                 {" "}
                 <a href="https://github.com/john257398">
-                <FaGithub className="icon3" />
+                  <FaGithub className="icon3" />
                 </a>
               </div>
               <div>
-                <a href='https://www.facebook.com/john.solomonwise'>
-                <FaFacebook className="icon4" />
+                <a href="https://www.facebook.com/john.solomonwise">
+                  <FaFacebook className="icon4" />
                 </a>
               </div>
             </div>
           </div>
-              <img src={portImage} alt='' className="portImage" />
+          <img src={portImage} alt="" className="portImage" />
         </div>
       </section>
       <section id="navigateAbout" className="aboutDiv">
@@ -207,12 +206,10 @@ function Portfolio() {
         </div>
         <div data-aos="fade-up" className="resumeParent">
           <button className="resume">
-            <a 
-            href={johnResume}
-            download
-            >
-            Download My Resume
-            </a></button>
+            <a href={johnResume} download>
+              Download My Resume
+            </a>
+          </button>
         </div>
       </section>
       <section id="navigateProjects">
@@ -255,7 +252,7 @@ function Portfolio() {
               </div>
             </div>
             <a href="https://farm-coat.herokuapp.com">
-            <button className="view2">View</button>
+              <button className="view2">View</button>
             </a>
           </div>
           <div data-aos="fade-left" className="thirdProjectDiv">
@@ -275,7 +272,7 @@ function Portfolio() {
               </div>
             </div>
             <a href="https://todoapp56.herokuapp.com">
-            <button className="view3">View</button>
+              <button className="view3">View</button>
             </a>
           </div>
         </div>
@@ -403,18 +400,18 @@ function Portfolio() {
           <div>
             {" "}
             <a href="https://twitter.com/JohnSol08427580">
-            <FaTwitter className="icon6" />
+              <FaTwitter className="icon6" />
             </a>
           </div>
           <div>
             {" "}
             <a href="https://github.com/john257398">
-            <FaGithub className="icon7" />
+              <FaGithub className="icon7" />
             </a>
           </div>
           <div>
-          <a href='https://www.facebook.com/john.solomonwise'>
-            <FaFacebook className="icon8" />
+            <a href="https://www.facebook.com/john.solomonwise">
+              <FaFacebook className="icon8" />
             </a>
           </div>
         </div>
