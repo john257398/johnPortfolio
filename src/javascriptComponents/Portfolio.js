@@ -154,7 +154,7 @@ function Portfolio() {
               className="whatsappParent"
             >
               <button className="whatsapp">
-                <a href="https://wa.me/08075721644">Whatsapp Me</a>
+                <a href="https://wa.me/2348075721644">Whatsapp Me</a>
               </button>
             </div>
             <div
